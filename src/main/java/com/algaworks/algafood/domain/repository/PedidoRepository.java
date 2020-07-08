@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.algaworks.algafood.domain.model.Pedido;
 
 @Repository
-public interface PedidoRepository extends CustomJpaRepository<Pedido, Long>,
-		JpaSpecificationExecutor<Pedido> {
+public interface PedidoRepository extends CustomJpaRepository<Pedido, Long>, JpaSpecificationExecutor<Pedido> {
 
 	Optional<Pedido> findByCodigo(String codigo);
 
